@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EmoVerse 🌙</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body id="page">
+
+    <div class="box">
+        <h1>EmoVerse 🌈</h1>
+
+        <textarea id="text" placeholder="Type how you feel..."></textarea>
+        <button onclick="toggleMode()">🌙 / ☀️</button>
+
+        <button onclick="analyze()">Analyze Emotion</button>
+
+        <h2 id="result"></h2>
+        <p id="message"></p>
+
+        <canvas id="emotionChart"></canvas>
+        <button onclick="loadHistory()">View Mood History</button>
+        <button onclick="clearHistory()">Clear Mood History</button>
+<p id="quote"></p>
+
+
+<canvas id="historyChart"></canvas>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
